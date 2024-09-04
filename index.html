@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main-content">
+            <p id="match-result">MATCH RESULT</p>
+            <div>   <h1 id="home-title">HOME</h1>
+                    <p id="home-score"></p>
+                    <div><button onclick="addNumber(1, 'home-score')" id="home-button1">+1</button>
+                        <button onclick="addNumber(2, 'home-score')" id="home-button2">+2</button>
+                        <button onclick="addNumber(3, 'home-score')" id="home-button3">+3</button>
+                    </div>
+                    
+                </div>
+            <div>   <h1 id="guest-title">GUEST</h1>
+                    <h1 id="guest-score"></h1>
+                    <div><button onclick="addNumber(1, 'guest-score')" id="guest-button1">+1</button>
+                        <button onclick="addNumber(2, 'guest-score')" id="guest-button2">+2</button>
+                        <button onclick="addNumber(3, 'guest-score')" id="guest-button3">+3</button>
+                    </div>
+            </div>
+            <button onclick="endMatch()" id="end-match">END MATCH</button>
+            <button onclick="newMatch()" id="new-match">NEW MATCH</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
